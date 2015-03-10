@@ -15,6 +15,7 @@ $overboard: #009dcd;
 $padding: 10px;
 $margin: 10px;
 
+$font-size30: 30px;
 $font-size: 16px;
 $font-family: 'Source Sans Pro', sans-serif;
 $line-height: 1.4;
@@ -134,8 +135,14 @@ body {
 
 		&:hover {
 			background-color: $lightgray;
-			
-				
+			font-size: 21px;
+			border-radius: 20%;
+			//font-size: font-size30 - 9px;
+			-webkit-transition: background-color 0.5s ease;
+				-moz-transition: background-color 0.5s ease;
+				-o-transition: background-color 0.5s ease;
+				-ms-transition: background-color 0.5s ease;
+				transition: background-color 0.5s ease;
 			}
 
 	}
@@ -414,9 +421,12 @@ span[data-icon]:before {
 	speak: none;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 30px;
+//	font-size: 30px;
+	font-size: $font-size30;
 	color: $strawberry;
 	display:inline;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	
 }
